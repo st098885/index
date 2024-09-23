@@ -1067,173 +1067,7 @@
             });
 
             //**********************************登入登出功能***********************************************
-            //登入按鈕監聽
-            $("#loginModal_ok_btn").click(function () {
-                if ($("#loginModal_username").val() != "" && $("#loginModal_password").val() != "") {
-                    //帳號密碼都有輸入
-                    //傳遞登入資料至後端API 執行登入行為
-                    //{"username":"owner01", "password":"123456"}
-                    var dataJSON = {};
-                    dataJSON["username"] = $("#loginModal_username").val();
-                    dataJSON["password"] = $("#loginModal_password").val();
-
-                    console.log(JSON.stringify(dataJSON));
-
-                    $.ajax({
-                        type: "POST",
-                        url: "member-login-api.php",
-                        data: JSON.stringify(dataJSON),
-                        dataType: "json",
-                        success: showdata_login,
-                        error: function () {
-                            alert("error-member-login-api.php");
-                        }
-                    });
-
-                } else {
-                    //帳號密碼都有空白欄位
-                    alert("登入錯誤!");
-                }
-            });
-
-            //登出按鈕監聽
-            $("#s02_logout_btn").click(function () {
-                setCookie("uid01", "", 7);
-                location.href = "20240730-spa.html";
-            });
-
-        }); //end fun
-
-        function showdata_checkuni(data) {
-            console.log(data);
-            if (data.state) {
-                $("#registerModal_username").removeClass("is-invalid");
-                $("#registerModal_username").addClass("is-valid");
-                flag_username = true;
-            } else {
-                $("#registerModal_username").removeClass("is-valid");
-                $("#registerModal_username").addClass("is-invalid");
-                flag_username = false;
-            }
-        }
-
-        function showdata_register(data) {
-            console.log(data);
-            if (data.state) {
-                alert(data.message);
-                location.href = "20240730-spa.html";
-            } else {
-                alert(data.message);
-            }
-        }
-
-        function showdata_login(data) {
-            console.log(data);
-            if (data.state) {
-                if (data.data.State == "1") {
-                    //帳號為啟用狀態
-                    alert(data.message);
-                    //loginModal隱藏
-                    $("#loginModal").modal("hide");
-                    //顯示登入帳號
-                    $("#s02_login_username").text(data.data.Username);
-                    //隱藏登入與註冊按鈕
-                    $("#s02_login_btn").addClass("d-none");
-                    $("#s02_register_btn").addClass("d-none");
-                    //顯示登出按鈕
-                    $("#s02_logout_btn").removeClass("d-none");
-
-                    //顯示vip高級功能
-                    $("#s02_btn01").removeClass("disabled");
-                    $("#s02_btn02").removeClass("disabled");
-                    $("#s02_btn03").removeClass("disabled");
-                    $("#s03").removeClass("d-none");
-                    $("#s04").removeClass("d-none");
-                    $("#s05").removeClass("d-none");
-                    $("#s06").removeClass("d-none");
-                    $("#s07").removeClass("d-none");
-                    $("#s08").removeClass("d-none");
-                    $("#s09").removeClass("d-none");
-                    $("#s10").removeClass("d-none");
-                    $("#s11").removeClass("d-none");
-                    $("#s12").removeClass("d-none");
-                    $("#s13").removeClass("d-none");
-                    $("#s14").removeClass("d-none");
-                    $("#s15").removeClass("d-none");
-                } else {
-                    //帳號為停權狀態
-                    alert(data.message + "該帳號已被停權!");
-                    //loginModal隱藏
-                    $("#loginModal").modal("hide");
-                    //顯示登入帳號
-                    $("#s02_login_username").text(data.data.Username);
-                    //隱藏登入與註冊按鈕
-                    $("#s02_login_btn").addClass("d-none");
-                    $("#s02_register_btn").addClass("d-none");
-                    //顯示登出按鈕
-                    $("#s02_logout_btn").removeClass("d-none");
-                    //顯示停權警告畫面 s16
-                    $("#s16").removeClass("d-none");
-                }
-
-
-                //將uid01寫入cookie
-                setCookie("uid01", data.data.Uid01, 7);
-            } else {
-                alert(data.message);
-            }
-        }
-
-        function showdata_check_uid(data) {
-            console.log(data);
-            if (data.state) {
-                if (data.data.State == "1") {
-                    //帳號為啟用狀態
-                    //顯示登入帳號
-                    $("#s02_login_username").text(data.data.Username);
-                    //隱藏登入與註冊按鈕
-                    $("#s02_login_btn").addClass("d-none");
-                    $("#s02_register_btn").addClass("d-none");
-                    //顯示登出按鈕
-                    $("#s02_logout_btn").removeClass("d-none");
-
-                    //顯示vip高級功能
-                    $("#s02_btn01").removeClass("disabled");
-                    $("#s02_btn02").removeClass("disabled");
-                    $("#s02_btn03").removeClass("disabled");
-                    $("#s03").removeClass("d-none");
-                    $("#s04").removeClass("d-none");
-                    $("#s05").removeClass("d-none");
-                    $("#s06").removeClass("d-none");
-                    $("#s07").removeClass("d-none");
-                    $("#s08").removeClass("d-none");
-                    $("#s09").removeClass("d-none");
-                    $("#s10").removeClass("d-none");
-                    $("#s11").removeClass("d-none");
-                    $("#s12").removeClass("d-none");
-                    $("#s13").removeClass("d-none");
-                    $("#s14").removeClass("d-none");
-                    $("#s15").removeClass("d-none");
-                } else {
-                    //帳號為停權狀態
-                    alert(data.message + "該帳號已被停權!");
-                    //loginModal隱藏
-                    $("#loginModal").modal("hide");
-                    //顯示登入帳號
-                    $("#s02_login_username").text(data.data.Username);
-                    //隱藏登入與註冊按鈕
-                    $("#s02_login_btn").addClass("d-none");
-                    $("#s02_register_btn").addClass("d-none");
-                    //顯示登出按鈕
-                    $("#s02_logout_btn").removeClass("d-none");
-                    //顯示停權警告畫面 s16
-                    $("#s16").removeClass("d-none");
-                }
-            }
-        }
-
-
-
+          
 
 
         //********************from w3********************
@@ -1259,6 +1093,24 @@
             }
             return "";
         }
+    </script>
+ <script>
+        $("#s02_btn01").removeClass("disabled");
+                    $("#s02_btn02").removeClass("disabled");
+                    $("#s02_btn03").removeClass("disabled");
+                    $("#s03").removeClass("d-none");
+                    $("#s04").removeClass("d-none");
+                    $("#s05").removeClass("d-none");
+                    $("#s06").removeClass("d-none");
+                    $("#s07").removeClass("d-none");
+                    $("#s08").removeClass("d-none");
+                    $("#s09").removeClass("d-none");
+                    $("#s10").removeClass("d-none");
+                    $("#s11").removeClass("d-none");
+                    $("#s12").removeClass("d-none");
+                    $("#s13").removeClass("d-none");
+                    $("#s14").removeClass("d-none");
+                    $("#s15").removeClass("d-none");
     </script>
 </body>
 
