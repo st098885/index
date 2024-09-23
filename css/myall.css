@@ -1,0 +1,262 @@
+@import url('https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@300;400;500;700;900&display=swap');
+body {
+    font-family: "Zen Maru Gothic", serif;
+    font-optical-sizing: auto;
+}
+.fw-100{
+    font-weight: 100;
+}
+.fw-200{
+    font-weight: 200;
+}
+.fw-300{
+    font-weight: 300;
+}
+.fw-400{
+    font-weight: 400;
+}
+.fw-400{
+    font-weight: 500;
+}
+.fw-500{
+    font-weight: 600;
+}
+.fw-600{
+    font-weight: 600;
+}
+.fw-700{
+    font-weight: 700;
+}
+.fw-800{
+    font-weight: 800;
+}
+.fw-900{
+    font-weight: 900;
+}
+:root{
+    --mycolor01: #05f5d5;
+    --mycolor02: #f84d09;
+    --mycolor03: #1184e2;
+    --mycolor04:#31520c;
+    --mycolor05:#0625d4;
+    --mycolor06:#d40610;
+    --mycolor07:#a7d406;
+    --mycolor08:#06d45c;
+    --mycolor09:#ffffff;
+    --mytextcolor01:#d406b8;
+    --mytextcolor02:#d46306ee;
+    --mytextcolor03:#1b06d4e3;
+    --mytextcolor04:#ffffff;
+    --mytextcolor05:#31520c;
+    --mytextcolor06:#d40610;
+    --mytextcolor07:#a7d406;
+    --mytextcolor08:#06d45c;
+    --mytextcolor09:#1184e2;
+
+}
+
+/* 背景色 */
+.bg-01{
+    background-color: var(--mycolor01);
+}
+.bg-02{
+    background-color: var(--mycolor02);
+}
+.bg-03{
+    background-color: var(--mycolor03);
+}
+.bg-04{
+    background-color: var(--mycolor04);
+}
+.bg-05{
+    background-color: var(--mycolor05);
+}
+.bg-06{
+    background-color: var(--mycolor06);
+}
+.bg-07{
+    background-color: var(--mycolor07);
+}.bg-08{
+    background-color:var(--mycolor08);
+}
+.bg-09{
+    background-color:var(--mycolor09);
+}
+
+/* 按鈕 */
+.bg-btn01{
+    background-color: var(--mycolor02);
+    border-radius: 10px;
+    box-shadow:5px 5px 2px 2px var(--mycolor03);
+    margin-right: 10px;
+}
+.bg-btn01:hover{
+    background-color: var(--mycolor02);
+    color: var(--mycolor01);
+    font-size: 20px;
+    box-shadow:5px 5px 2px 2px var(--mycolor02);
+}
+.bg-btn01{
+    background-color: var(--mycolor07);
+    border-radius: 5px;
+    box-shadow: 5px 5px 2px 2px var(--mycolor08);
+    margin-right: 10px;
+}
+.bg-btn02{
+    background-color: var(--mycolor07);
+    border-radius: 5px;
+    box-shadow: 5px 5px 2px 2px var(--mycolor08);
+    margin-right: 10px;
+}
+.bg-btn03{
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-decoration: none;
+    color: var(--mycolor02);
+    font-size: 20px;
+    background-color: var(--mycolor04);
+    border-radius: 5px;
+    box-shadow: 5px 5px 2px 2px var(--mycolor07);
+    margin-right: 10px;
+}
+
+/* 外框色 */
+.myborder-01{
+    border:2px solid var(--mycolor06); 
+}
+.myborder-02{
+    border:2px solid var(--mycolor07)
+}
+
+/* 文字顏色 */
+.text-color01{
+    color: var(--mytextcolor01);
+}
+.text-color02{
+    color: var(--mytextcolor02);
+}
+.text-color03{
+    color: var(--mytextcolor03);
+}
+.text-color04{
+    color: var(--mytextcolor04);
+}
+.text-color05{
+    color: var(--mytextcolor05);
+}
+.text-color06{
+    color: var(--mytextcolor06);
+}
+.text-color07{
+    color: var(--mytextcolor07);
+}
+.text-color08{
+    color: var(--mytextcolor08);
+}
+.text-color09{
+    color: var(--mytextcolor09);
+}
+
+/* 背景圖 */
+.bg-cover{
+    background-position: center center;
+    background-size: cover;
+}
+
+/* 卷軸特效 外層.box_roller 內層.roller */
+.box_roller{
+    position: relative;
+    overflow: hidden;
+}
+.roller{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.3);
+    top: -100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box_roller:hover .roller{
+    top: 0;
+    transition: top 2s;
+}
+
+/* table-rwd  */
+@media screen and (max-width: 768px){
+    .table-rwd thead{
+        display: none;
+    }
+    .table-rwd tbody tr{
+        display: block;
+        margin-top: 15px;
+        border: 5px solid var(--mycolor01);
+    }
+    .table-rwd tbody tr td{
+        display: block;
+        overflow: hidden;
+    }
+    .table-rwd tbody tr td::before{
+        content: attr(data-th)" : ";
+        color: var(--mytextcolor03);
+        font-weight: bolder;
+        font-size: 22px;
+        display: block;
+        float: left;
+        width: 30%;
+        text-align: right;
+        padding-right: 15px;
+    }
+    .table-rwd tbody tr td span.table-col{
+        display: block;
+        float: left;
+        width: 70%;
+    }
+}
+
+/* timeline */
+.timeline-section {
+    position: relative;
+}
+
+.timeline-section::before {
+    position: absolute;
+    content: "";
+    top: 10px;
+    bottom: 10px;
+    width: 8px;
+    background-color: var(--mycolor08);
+    left: 50%;
+    transform: translateX(-50%);
+}
+.timeline-section-pointer{
+    position: relative;
+}
+.timeline-section-pointer::before{
+    position: absolute;
+    content: "";
+    width: 24px;
+    height: 24px;
+    border-color: var(--mycolor02);
+    border-radius: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 7px solid var(--mycolor05);
+    top: 10px;
+}
+.timeline-section-pointer:hover:before{
+    width: 36px;
+    height: 36px;
+    border: 10px solid var(--mycolor03);
+}
+@media screen and(max-width:768px){
+    .timeline-section::before{
+        left: -10px;
+    }
+    .timeline-section-pointer::before{
+        left: 3px;
+    }
+}
