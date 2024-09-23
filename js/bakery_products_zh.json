@@ -1,0 +1,289 @@
+[
+    {
+        "ID": 1,
+        "ProductName": "巧克力泡芙",
+        "Price": 293.8,
+        "Ingredients": [
+            "奶油",
+            "芝士",
+            "抹茶",
+            "抹茶"
+        ],
+        "Description": "食材天然",
+        "ImagePath": "../images/泡芙.jfif"
+    },
+    {
+        "ID": 2,
+        "ProductName": "蘋果派",
+        "Price": 293.27,
+        "Ingredients": [
+            "抹茶",
+            "核桃",
+            "雞蛋"
+        ],
+        "Description": "美味可口",
+        "ImagePath": "../images/蘋果派.jfif"
+    },
+    {
+        "ID": 3,
+        "ProductName": "奶酪",
+        "Price": 75.48,
+        "Ingredients": [
+            "芝士",
+            "核桃",
+            "蜂蜜",
+            "糖"
+        ],
+        "Description": "香氣四溢",
+        "ImagePath": "../images/奶酪.jfif"
+    },
+    {
+        "ID": 4,
+        "ProductName": "蜜糖吐司",
+        "Price": 363.99,
+        "Ingredients": [
+            "糖",
+            "肉桂"
+        ],
+        "Description": "香氣四溢",
+        "ImagePath": "../images/蜜糖吐司.jfif"
+    },
+    {
+        "ID": 5,
+        "ProductName": "巧克力蛋糕",
+        "Price": 113.52,
+        "Ingredients": [
+            "巧克力",
+            "藍莓"
+        ],
+        "Description": "新鮮出爐",
+        "ImagePath": "../images/巧顆粒蛋糕.jfif"
+    },
+    {
+        "ID": 6,
+        "ProductName": "提拉米蘇",
+        "Price": 112.33,
+        "Ingredients": [
+            "肉桂",
+            "雞蛋"
+        ],
+        "Description": "健康美味",
+        "ImagePath": "../images/提拉米蘇.jfif"
+    },
+    {
+        "ID": 7,
+        "ProductName": "藍莓鬆餅",
+        "Price": 477.43,
+        "Ingredients": [
+            "麵粉",
+            "香蕉",
+            "藍莓",
+            "香蕉"
+        ],
+        "Description": "香甜鬆軟",
+        "ImagePath": "../images/藍莓鬆餅.jfif"
+    },
+    {
+        "ID": 8,
+        "ProductName": "酥皮點心",
+        "Price": 114.97,
+        "Ingredients": [
+            "麵粉",
+            "巧克力"
+        ],
+        "Description": "美味可口",
+        "ImagePath": "../images/酥皮點心.jfif"
+    },
+    {
+        "ID": 9,
+        "ProductName": "抹茶蛋糕",
+        "Price": 294.14,
+        "Ingredients": [
+            "雞蛋",
+            "草莓"
+        ],
+        "Description": "食材天然",
+        "ImagePath": "../images/抹茶蛋糕123.jfif"
+    },
+    {
+        "ID": 12,
+        "ProductName": "巧克力曲奇",
+        "Price": 66.28,
+        "Ingredients": [
+            "麵粉",
+            "藍莓"
+        ],
+        "Description": "健康美味",
+        "ImagePath": "../images/巧克力曲奇.jfif"
+    },
+    {
+        "ID": 13,
+        "ProductName": "草莓蛋糕",
+        "Price": 332.96,
+        "Ingredients": [
+            "檸檬",
+            "巧克力",
+            "肉桂",
+            "奶油乳酪",
+            "肉桂"
+        ],
+        "Description": "香甜鬆軟",
+        "ImagePath": "../images/草莓蛋糕.jfif"
+    },
+    {
+        "ID": 14,
+        "ProductName": "芝士蛋糕",
+        "Price": 152.32,
+        "Ingredients": [
+            "核桃",
+            "藍莓",
+            "麵粉"
+        ],
+        "Description": "香甜鬆軟",
+        "ImagePath": "../images/芝士蛋糕.jfif"
+    },
+    {
+        "ID": 15,
+        "ProductName": "焦糖布丁",
+        "Price": 415.65,
+        "Ingredients": [
+            "咖啡",
+            "咖啡"
+        ],
+        "Description": "香氣四溢",
+        "ImagePath": "../images/焦糖布丁.jfif"
+    },
+    {
+        "ID": 18,
+        "ProductName": "肉桂捲",
+        "Price": 127.22,
+        "Ingredients": [
+            "抹茶",
+            "奶油"
+        ],
+        "Description": "香氣四溢",
+        "ImagePath": "../images/肉桂捲.jfif"
+    },
+    {
+        "ID": 19,
+        "ProductName": "馬卡龍",
+        "Price": 357.88,
+        "Ingredients": [
+            "糖",
+            "紅豆"
+        ],
+        "Description": "香氣四溢",
+        "ImagePath": "../images/馬卡龍.jfif"
+    },
+    {
+        "ID": 20,
+        "ProductName": "咖啡蛋糕",
+        "Price": 466.24,
+        "Ingredients": [
+            "糖",
+            "蜂蜜",
+            "芝士"
+        ],
+        "Description": "健康美味",
+        "ImagePath": "../images/咖啡蛋糕.jfif"
+    },
+    {
+        "ID": 22,
+        "ProductName": "紅豆包",
+        "Price": 308.85,
+        "Ingredients": [
+            "麵粉",
+            "奶油",
+            "香蕉",
+            "檸檬"
+        ],
+        "Description": "獨特風味",
+        "ImagePath": "../images/紅豆包.jfif"
+    },
+    {
+        "ID": 27,
+        "ProductName": "法式長棍",
+        "Price": 343.09,
+        "Ingredients": [
+            "奶油乳酪"
+        ],
+        "Description": "食材天然",
+        "ImagePath": "../images/法式長棍.jfif"
+    },
+    {
+        "ID": 30,
+        "ProductName": "牛角包",
+        "Price": 156.16,
+        "Ingredients": [
+            "蜂蜜",
+            "香蕉",
+            "紅豆",
+            "藍莓"
+        ],
+        "Description": "健康美味",
+        "ImagePath": "../images/牛角包.jfif"
+    },
+    {
+        "ID": 33,
+        "ProductName": "豆乳蛋糕",
+        "Price": 402.72,
+        "Ingredients": [
+            "抹茶",
+            "檸檬"
+        ],
+        "Description": "食材天然",
+        "ImagePath": "../images/豆乳蛋糕.jfif"
+    },
+    {
+        "ID": 34,
+        "ProductName": "瑪芬",
+        "Price": 442.92,
+        "Ingredients": [
+            "蜂蜜",
+            "奶油乳酪",
+            "核桃",
+            "香蕉"
+        ],
+        "Description": "美味可口",
+        "ImagePath": "../images/瑪芬.jfif"
+    },
+    {
+        "ID": 36,
+        "ProductName": "鳳梨酥",
+        "Price": 201.49,
+        "Ingredients": [
+            "草莓",
+            "乳酪",
+            "咖啡",
+            "巧克力",
+            "紅豆"
+        ],
+        "Description": "口感絕佳",
+        "ImagePath": "../images/鳳梨酥.jfif"
+    },
+    {
+        "ID": 38,
+        "ProductName": "巧克力布朗尼",
+        "Price": 55.22,
+        "Ingredients": [
+            "椰子",
+            "糖",
+            "雞蛋",
+            "蜂蜜",
+            "奶油乳酪"
+        ],
+        "Description": "香甜鬆軟",
+        "ImagePath": "../images/巧克力布朗尼.jfif"
+    },
+    {
+        "ID": 40,
+        "ProductName": "草莓派",
+        "Price": 120.86,
+        "Ingredients": [
+            "肉桂",
+            "核桃"
+        ],
+        "Description": "獨特風味",
+        "ImagePath": "../images/草莓派.jfif"
+    }
+]
